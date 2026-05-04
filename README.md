@@ -1,6 +1,5 @@
-# Conditioner
-
 <!DOCTYPE html>
+
 <html lang="ru">
 <head>
 <meta charset="UTF-8">
@@ -98,7 +97,6 @@
         color: white;
     }
 
-    /* ===== МОДАЛЬНЫЕ ОКНА ===== */
     .modal {
         display: none;
         position: fixed;
@@ -134,15 +132,14 @@
         cursor: pointer;
         color: #333;
     }
-
 </style>
+
 </head>
 
 <body>
 
 <header>
     <h1>Устройство кондиционера</h1>
-    
 </header>
 
 <nav>
@@ -152,85 +149,59 @@
 
 <div class="container">
 
-    <section id="concept" class="card">
-        <h2>Понятие кондиционера</h2>
-        <p>
-<b>Кондиционер</b> — это специализированное техническое устройство, предназначенное для создания,
- регулирования и автоматического поддержания заданных параметров микроклимата в помещении.</p>
+<section id="concept" class="card">
+<h2>Понятие кондиционера</h2>
 
-<p><b>Внутри кондиционера есть несколько основных частей:</b></p>
+<p><b>Кондиционер</b> — это устройство для поддержания комфортного микроклимата.</p>
 
-<ul>
+<img src="https://domsplit.ru/upload/iblock/b98/9cft3fz6wbxe7of12vwwxz3fbsxuq84v.jpg">
+</section>
 
-<li><i>Компрессор</i> — «сердце» системы, он сжимает и гоняет специальный газ (хладагент).</li>
-<li><i>Испаритель</i> — забирает тепло из воздуха внутри комнаты.</li>
-<li><i>Конденсатор</i> — выводит тепло наружу.</li>
-<li><i>Вентиляторы</i> — помогают перемещать воздух.</li>
-<li><i>Фильтры</i> — очищают воздух от пыли, иногда от запахов и бактерий. </li>
-</ul>
-        <img src="https://domsplit.ru/upload/iblock/b98/9cft3fz6wbxe7of12vwwxz3fbsxuq84v.jpg">
-    </section>
+<section id="device" class="card">
+<h2>Основные узлы кондиционера</h2>
 
-    <section id="device" class="card">
-        <h2>Основные узлы кондиционера</h2>
-
-        <div class="grid">
-
-            <div class="box">
-                <h3>Компрессор</h3>
-                <button onclick="openModal('m1')">Открыть схему</button>
-            </div>
-
-            <div class="box">
-                <h3>Конденсатор</h3>
-                <button onclick="openModal('m2')">Открыть схему</button>
-            </div>
-
-            <div class="box">
-                <h3>Испаритель</h3>
-                <button onclick="openModal('m3')">Открыть схему</button>
-            </div>
-
-        </div>
-    </section>
-
+<div class="grid">
+<div class="box">
+<h3>Компрессор</h3>
+<button onclick="openModal('m1')">Открыть схему</button>
 </div>
 
+<div class="box">
+<h3>Конденсатор</h3>
+<button onclick="openModal('m2')">Открыть схему</button>
+</div>
 
+<div class="box">
+<h3>Испаритель</h3>
+<button onclick="openModal('m3')">Открыть схему</button>
+</div>
+</div>
 
-<!-- ===== МОДАЛЬНЫЕ ОКНА ===== -->
+</section>
+</div>
 
 <div id="m1" class="modal">
-  <div class="modal-content">
-    <span class="close" onclick="closeModal('m1')">&times;</span>
-    <h2>Компрессор</h2>
-    <img src="https://www.stron-parts.ru/files/image/kompressor_avtomobilya.jpg">
-    <p>Компрессор — ключевой элемент кондиционера, который обеспечивает циркуляцию хладагента, 
-сжимая его и поддерживая процесс охлаждения. От его типа, надёжности и эффективности зависят 
-производительность, энергопотребление, уровень шума и срок службы всей системы. </p>
-  </div>
+<div class="modal-content">
+<span class="close" onclick="closeModal('m1')">&times;</span>
+<h2>Компрессор</h2>
+<img src="https://www.stron-parts.ru/files/image/kompressor_avtomobilya.jpg">
+</div>
 </div>
 
 <div id="m2" class="modal">
-  <div class="modal-content">
-    <span class="close" onclick="closeModal('m2')">&times;</span>
-    <h2>Конденсатор</h2>
-    <img src="https://avatars.mds.yandex.net/i?id=3e3f15b59a33fb37d78677c266f51f0c_l-8750288-images-thumbs&n=13">
-    <p>Конденсатор - это теплообменник, где происходит конденсация предварительно сжатого компрессором 
-газообразного хладагента. При этом тепло, выделяющееся при сжатии, рассеивается в окружающую среду. 
-</p>
-  </div>
+<div class="modal-content">
+<span class="close" onclick="closeModal('m2')">&times;</span>
+<h2>Конденсатор</h2>
+<img src="https://avatars.mds.yandex.net/i?id=3e3f15b59a33fb37d78677c266f51f0c_l-8750288-images-thumbs&n=13">
+</div>
 </div>
 
 <div id="m3" class="modal">
-  <div class="modal-content">
-    <span class="close" onclick="closeModal('m3')">&times;</span>
-    <h2>Испаритель</h2>
-    <img src="https://avatars.mds.yandex.net/i?id=344952dec221a29b60b6a346bc098229_l-4078174-images-thumbs&n=13">
-    <p>Испаритель - это радиатор, в котором происходит нагрев жидкого хладагента и его испарение. 
-При этом поглощается тепло из окружающей среды (воздуха или жидкости), и охлаждаемая среда охлаждается.
-</p>
-  </div>
+<div class="modal-content">
+<span class="close" onclick="closeModal('m3')">&times;</span>
+<h2>Испаритель</h2>
+<img src="https://avatars.mds.yandex.net/i?id=344952dec221a29b60b6a346bc098229_l-4078174-images-thumbs&n=13">
+</div>
 </div>
 
 <script>
